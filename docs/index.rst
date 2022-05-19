@@ -185,7 +185,12 @@ You can join the conversation on our Github page and our Github forum.
    :caption: Tutorials
    :hidden:
 
-   tutorials/gallery.md
+   tutorials/introductory.md
+   tutorials/pre-annotate.md
+   tutorials/weak-supervision.md
+   tutorials/active-learning.md
+   tutorials/label-errors.md
+   tutorials/monitoring.md
 
 .. toctree::
    :maxdepth: 4
