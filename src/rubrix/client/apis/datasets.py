@@ -4,7 +4,7 @@ from typing import Any, Dict, Optional, Set, Union
 
 from pydantic import BaseModel, Field
 
-from rubrix.client.apis import AbstractApi, api_compatibility
+from rubrix.client.apis import AbstractAPI, api_compatibility
 from rubrix.client.sdk.commons.errors import AlreadyExistsApiError, NotFoundApiError
 from rubrix.client.sdk.datasets.api import get_dataset
 from rubrix.client.sdk.datasets.models import TaskType
@@ -75,7 +75,7 @@ __TASK_TO_SETTINGS__ = {
 }
 
 
-class Datasets(AbstractApi):
+class Datasets(AbstractAPI):
     """Dataset client api class"""
 
     _API_PREFIX = "/api/datasets"

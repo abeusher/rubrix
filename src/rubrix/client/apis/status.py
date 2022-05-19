@@ -5,7 +5,7 @@ from typing import ContextManager, Optional, Type
 from packaging.version import parse
 from pydantic import BaseModel
 
-from rubrix.client.apis import AbstractApi
+from rubrix.client.apis import AbstractAPI
 from rubrix.client.sdk.client import AuthenticatedClient
 from rubrix.client.sdk.commons.errors import ApiCompatibilityError
 
@@ -16,7 +16,7 @@ class ApiInfo:
     rubrix_version: str
 
 
-class Status(AbstractApi):
+class Status(AbstractAPI):
     class _ApiInfo(BaseModel):
         rubrix_version: str
 
@@ -55,7 +55,7 @@ class _ApiCompatibilityContextManager(ContextManager):
         pass
 
 
-def api_compatibility(api: AbstractApi, min_version: str):
+def api_compatibility(api: AbstractAPI, min_version: str):
     """
     Handles problems related to server API compatibility.
 
